@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./CSS-WS/rao-style.css">
+</head>
+
+<body class="contact-bg">
+
+    <header class="bg-clrhome">
+        <div class="botcentnav">
+            <a href="index.html">Home</a>
+            <a href="biography.html">Biography</a>
+            <a href="music.html">Music</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+    </header>
+
+    <main>
+        <h2 class="contact-header">Contact</h2>
+        <div class="contact-desc">
+            <p>
+                To book concerts or classes please fill out the form.
+            </p>
+        </div>
+
+        <form action="">
+            <div>
+                <label class="inputLabel" for="title">Title:</label>
+                <select name="titleName" id="title">
+                    <option label="Please select your title"></option>
+                    <option enabled>Prefer not to say</option>
+                    <option value="mr">Mr</option>
+                    <option value="mrs">Mrs</option>
+                    <option value="ms">Ms</option>
+                    <option value="miss">Miss</option>
+                    <option value="dr">Dr</option>
+                </select>
+            </div>
+            <div>
+                <label class="inputLabel" for="fname">First name:</label>
+                <input id="fname" type="text" name="firstName" maxlength="100" placeholder="John">
+            </div>
+            <div>
+                <label class="inputLabel" for="lname">Last name:</label>
+                <input id="lname" type="text" name="lastName" maxlength="100" placeholder="Doe">
+            </div>
+            <div>
+                <label class="inputLabel" for="dateOfBirth">Date of birth:</label>
+                <input type="date" name="birthday" id="dateOfBirth">
+            </div>
+            <div>
+                <label class="inputLabel" for="e-mail">Email: *</label>
+                <input type="email" name="eMail" id="e-mail" maxlength="100" placeholder="johndoe@email.com" required>
+            </div>
+            <div>
+                <label class="inputLabel" for="pw">Password: *</label>
+                <input type="password" name="passWord" id="pw" minlength="4" maxlength="100"
+                    placeholder="Enter password" required>
+            </div>
+            
+            <div>
+                <label class="inputLabel" for="msg">What can I do for you?</label>
+                <textarea name="message" id="msg" cols="22" rows="5" maxlength="10000"
+                    placeholder="Enter message"></textarea>
+            </div>
+            <div class="submitDiv">
+                <div>
+                    <input type="checkbox" name="acceptMailList" id="mailList" checked>
+                    <label for="mailList">Subscribe for news on new releases and concerts.</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="acceptTerms" id="terms" required>
+                    <label for="terms">Accept the <a href="terms.html" target="_blank">terms and conditions</a>.
+                        *</label>
+                </div>
+                <div>
+                    <input type="submit" value="Send!">
+                </div>
+                <p>Fields marked with an * are required</p>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer class="ft-contact">
+        <a href="#">Back to Top</a>
+    </footer>
+
+</body>
